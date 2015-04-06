@@ -1,15 +1,11 @@
 language: python
-
 python:
   - "3.4"
-
 env:
   - DATABASE_URL=postgres://postgres:@localhost/snippets
-
 install:
  - pip3 install -r requirements.txt
-
 before_script:
   - psql -c 'create database snippets;' -U postgres
-
 script: ./runtests
+after_success: coveralls

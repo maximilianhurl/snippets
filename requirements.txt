@@ -4,3 +4,4 @@ psycopg2==2.6
 django-flat-theme==0.9.3
 flake8==2.4.0
 coverage==3.7.1
+coveralls==0.5
