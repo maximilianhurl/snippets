@@ -1,5 +1,7 @@
 #Snippets
 
+[![Build Status](https://travis-ci.org/maximilianhurl/snippets.svg)](https://travis-ci.org/maximilianhurl/snippets)
+
 A webapp to store markdown code snippets (In development)
 
 ## To do:
