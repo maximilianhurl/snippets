@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -e
+
+export PATH=env/bin:${PATH}
+export EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
+
+coverage run --source=snippets --omit='*/wsgi.py,*/settings/*.py,*/migrations/*.py,*tests.py,*/commands/*.py,*__init__.py' manage.py test $@
+flake8 snippets --ignore=E128,E501 --exclude=migrations,settings
+coverage report -m

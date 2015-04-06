@@ -15,10 +15,10 @@ A webapp to store markdown code snippets (In development)
 	source env/bin/activate
 	pip3 install -r requirements.txt
 
-    //install postgress
+    //install postgres
     brew install postgress
     initdb /usr/local/var/postgres -E utf8
-    postgres -D /usr/local/var/postgres
+    postgres -D /usr/local/var/postgres  // start postgres
 
     //create a new user and database
     createuser -d -P postgres  // set password to 'password'
@@ -28,3 +28,6 @@ A webapp to store markdown code snippets (In development)
     //check the port number
     psql -U postgres -h localhost
     select inet_server_port();
+
+    env/bin/python3 manage.py migrate
+    env/bin/python3 manage.py runserver
