@@ -27,9 +27,11 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'markupfield',
 
-    'snippets.common',
-    'snippets.accounts',
+    'project.common',
+    'project.accounts',
+    'project.snippets',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -43,7 +45,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'snippets.urls'
+ROOT_URLCONF = 'project.urls'
 
 TEMPLATES = [
     {
@@ -61,7 +63,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'snippets.wsgi.application'
+WSGI_APPLICATION = 'project.wsgi.application'
 
 
 # Database

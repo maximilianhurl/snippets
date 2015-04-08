@@ -1,7 +1,7 @@
 from django.core.urlresolvers import reverse
 from django.test import TestCase
-from snippets.accounts.models import User
-from snippets.common.tests import LoggedInTestCase
+from project.accounts.models import User
+from project.common.tests import LoggedInTestCase
 
 
 class TestAccountModel(TestCase):
