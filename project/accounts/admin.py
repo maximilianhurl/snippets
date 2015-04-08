@@ -4,7 +4,7 @@ from django.contrib.auth.models import Group
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.forms import UserChangeForm
 
-from snippets.accounts.models import User
+from project.accounts.models import User
 
 
 class UserCreationForm(forms.ModelForm):

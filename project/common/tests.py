@@ -1,5 +1,5 @@
 from django.test import TestCase
-from snippets.accounts.models import User
+from project.accounts.models import User
 
 
 class LoggedInTestCase(TestCase):
