@@ -15,7 +15,7 @@ A webapp to store markdown code snippets (In development)
 ##Setup
 	
 	brew install python3
-	virtualenv env -ppython3.4
+	pyvenv-3.4 env
 	source env/bin/activate
 	pip3 install -r requirements.txt
 
