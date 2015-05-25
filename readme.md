@@ -9,7 +9,6 @@ A webapp to store markdown code snippets (In development)
 ## To do:
 
 - add snippet models and api (hypermedia)
-- add travis/coverage support
 - add deployment scripts
 
 ##Setup
